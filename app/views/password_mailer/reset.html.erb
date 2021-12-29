@@ -1,0 +1,6 @@
+Hi <%= params[:user].email %>,
+
+Someone requested to reset your password
+
+Click on the link below, it has a 15 minute expiration
+<%= link_to 'Reset Password', password_reset_edit_url(token: @token) %>
